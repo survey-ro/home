@@ -1,0 +1,520 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+main {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+img {
+    border-style: none
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+picture,
+img {
+    display: block
+}
+
+picture img {
+    width: 100%
+}
+
+html {
+    font-family: Manrope, system-ui, sans-serif;
+    font-size: 2vw;
+    background-color: #fff;
+    height: 100%
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    html {
+        font-size: .6613vw
+    }
+}
+
+@media (min-width: 1512px) {
+    html {
+        font-size: 10px
+    }
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100%;
+    background: #7CDD59;
+    color: #1e3117;
+    line-height: 1.36;
+    display: flex;
+    flex-flow: column
+}
+
+main {
+    position: relative;
+    margin: 0 auto;
+    flex: 1;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-flow: column
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    main {
+        margin: auto;
+        padding: 6rem 0 5rem;
+        width: 136rem
+    }
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2.6rem;
+    max-width: 28ch;
+    margin: .75em 0 1em
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    h2 {
+        font-size: 3.2rem
+    }
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    flex: 1
+}
+
+.logo {
+    position: relative;
+    width: 23.6rem;
+    margin-bottom: 2rem
+}
+
+.logo:before {
+    content: "";
+    display: block;
+    padding-bottom: 17.83%
+}
+
+.logo>svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.btn {
+    -webkit-appearance: none;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding: 1em 1.5em;
+    border: .07em transparent solid;
+    color: #278506;
+    border-radius: .4em;
+    display: block;
+    text-align: center;
+    background: transparent
+}
+
+.btn_primary {
+    background: #278506;
+    border: none;
+    color: #fff;
+    padding-left: 3em;
+    padding-right: 3em;
+    transition: background-color .3s ease, box-shadow .3s ease, padding .3s ease
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .btn {
+        border-color: #278506;
+        display: inline-block
+    }
+
+    .btn:hover {
+        background-color: #3a9b08;
+        padding-left: 4em;
+        padding-right: 4em
+    }
+}
+
+.actions {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    margin-bottom: 3rem
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .actions {
+        flex-flow: row;
+        gap: 3.4rem;
+        margin: 0
+    }
+}
+
+.footer {
+    background: white
+}
+
+.footer__content {
+    margin: 1rem 2rem 3rem;
+    text-align: center
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .footer__content {
+        text-align: left;
+        width: 136rem;
+        margin: 1rem auto;
+        gap: 3rem;
+        display: flex;
+        align-items: center
+    }
+}
+
+.footer__info {
+    font-size: 1.4rem
+}
+
+.footer__logos {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem
+}
+
+.footer__logos img {
+    display: block;
+    height: 7rem;
+    width: auto
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .footer__logos {
+        flex-wrap: no-wrap;
+        margin-bottom: 0
+    }
+}
+
+.footer a {
+    color: #278506;
+    display: inline-block;
+    margin-top: .5em
+}
+
+nav {
+    position: relative
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    nav {
+        position: absolute;
+        right: 0;
+        bottom: 5rem;
+        margin-top: 0;
+        text-align: right
+    }
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: .5rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 2rem
+}
+
+.menu a {
+    color: #fff
+}
+
+.menu li {
+    margin: 0 1rem
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .menu {
+        display: block;
+        font-size: 1.6rem
+    }
+
+    .menu li {
+        margin: 0
+    }
+
+    .menu li+li {
+        margin-top: 1.4rem
+    }
+}
+
+.bg {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .bg {
+        position: fixed;
+        bottom: 3rem
+    }
+}
+
+.question {
+    font-size: 5rem;
+    font-weight: 800;
+    margin: 0 0 .1em;
+    line-height: .85;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 4rem
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .question {
+        font-size: 5rem;
+        flex: 1
+    }
+}
+
+.result {
+    text-align: center;
+    margin-bottom: 4rem
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .result {
+        flex: 1;
+        margin: 0
+    }
+}
+
+.answers {
+    display: flex;
+    font-weight: 700;
+    align-items: flex-start;
+    flex-wrap: wrap
+}
+
+.answers__answer {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    flex: 1
+}
+
+.answers__answer-text {
+    padding: 1em;
+    border-radius: .5em;
+    background: white;
+    font-size: 2.5rem;
+    min-width: 3em;
+    text-align: center;
+    cursor: pointer;
+    transform-origin: center;
+    transition: transform .3s ease
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .answers {
+        flex: 1
+    }
+
+    .answers__answer {
+        margin-right: 3rem;
+        flex: initial
+    }
+
+    .answers__answer-text {
+        font-size: 3.5rem
+    }
+
+    .answers__answer:hover .answers__answer-text {
+        transform: scale(1.11)
+    }
+}
